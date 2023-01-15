@@ -1,0 +1,76 @@
+.containerHome{
+    display:flex;
+    justify-content: center;
+    align-items:start;
+    width:95vw;
+    margin-top:5px;
+}
+.containerHome .info{
+    margin-left:3px;
+    font-size:9px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:12px;
+    height:12px; 
+    border-radius:50%;
+    background-color:#999;
+    color:#fff;
+    
+}
+.containerHome .titulo{
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+}
+.containerHome .titulo p{
+    font-weight:bold;
+}
+
+
+
+.containerHome .stockMarketHighs {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex:1;
+    border-right: 2px solid #ccc;
+}
+.stockMarketHighs .titulo span {
+    font-size:25px;
+    color:green;
+}
+
+
+.containerHome .stockMarketLosses {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex:1;
+    border-left: 2px solid #ccc;
+
+}
+
+.stockMarketLosses .titulo span{
+    font-size:25px;
+    color:red;
+}
+.containerHome .stockMarketLosses h1{
+    margin-top:10px;
+}
+
+@media (max-width:800px){
+    .containerHome{
+        flex-direction:column;
+    }
+    .containerHome .stockMarketHighs,
+    .containerHome .stockMarketLosses
+    {
+        width:95vw;
+        margin-left:15px;
+        border-left: none;
+        border-right:none;
+    }
+}

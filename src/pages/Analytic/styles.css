@@ -1,0 +1,77 @@
+.containerAnalytic{
+    
+}
+.analyticHeader{
+    display:flex;
+    margin:auto;
+    max-width:900px;
+    align-items:center;
+    border-bottom:1px solid #ccc;
+    height:100px;
+    padding:5px;
+    color:#999;
+    justify-content:space-around;
+
+}
+.analyticHeader .logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-right: 2px solid #999;
+    width:60px;
+    height:60px;
+}
+.analyticHeader .logo img{
+    width:40px;
+}
+
+
+.analyticHeader .stock .ticker{
+    color:#000;
+    font-weight:bold;
+    font-size: 22px;
+}
+.analyticHeader .stock .name{
+    display:flex;
+    max-width:300px;
+    height:20px;
+    display:flex;
+    overflow:hidden;
+    
+    
+}
+
+.analyticHeader .price .priceStock{
+    font-size:22px;
+    color:#000;
+    font-weight:bold;
+}
+
+.analyticHeader .variacao{
+    
+}
+
+
+
+
+.analyticInfo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+}
+
+
+.analyticBody{
+    background-color:red;
+    color:#fff;
+}
+
+@media(max-width:800px){
+    .analyticInfo{
+        flex-direction:column;
+        justify-content:center;
+        
+    }
+}

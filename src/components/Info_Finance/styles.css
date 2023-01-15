@@ -1,0 +1,45 @@
+.containerInfoFinance{
+    display:flex;
+    max-width:900px;
+    align-items:center;
+    justify-content:start;
+    border-bottom:1px solid #ccc;
+    min-height:55px;
+    min-width:300px;
+    padding:5px;
+    color:#999;
+    
+    
+}
+.containerInfoFinance .InfoLogo{
+    width:40px;
+    height:40px;
+    border-right: 2px solid #ccc;
+}
+.containerInfoFinance .InfoLogo img{
+    padding:5px;
+    width:40px;
+    height:40px;
+}
+.containerInfoFinance .infoCompany{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    height:60px;
+    margin-left:10px;
+    
+}
+.infoCompany .title{
+    font-size:18px;
+    font-weight:bold;
+    color:#000;
+}
+.infoCompany .valor{
+    margin-top:2px;
+}
+
+@media(max-width:800px){
+    .containerInfoFinance{
+        width:100vw;
+    }
+}

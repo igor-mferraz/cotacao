@@ -1,0 +1,33 @@
+.containerSearch{
+    display:flex;
+    flex-direction:column;
+}
+.containerSearch .search{
+    display:flex;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+    height:50px;
+}
+.containerSearch .search img{
+    width:30px;
+    border-right: 2px solid #ccc;
+    margin-right:5px;
+    padding-right:5px;
+}
+.containerSearch .search input{
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline:none;
+    width:50vw;
+}
+.containerSearch .search button{
+    border:none;
+    border-radius:4px;
+    font-size:14px;
+    padding:2px 15px;
+    cursor:pointer;
+    background-color:#ccc;
+    color:#fff;
+    font-weight:bold;
+}

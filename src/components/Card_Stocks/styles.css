@@ -1,0 +1,75 @@
+.containerContainerCard{
+    display:flex;
+    align-items:center;
+    height:50px;
+    width:100%;
+    min-width:225px;
+    margin-top:px;
+    margin-top:5px;
+    
+}
+.containerContainerCard img{
+    height:30px;
+    margin-left:5px;
+
+}
+
+.containerCardStocks{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height:50px;
+    width:100%;
+    min-width:225px;
+    margin-top:px;
+    margin-top:5px;
+    
+}
+
+/*  */
+.containerCardStocks .cardTop{
+    display:flex;
+    flex:1;
+    align-items:center;
+    width:inherited;
+    margin-right:15px;
+    
+}
+.containerCardStocks .cardTop .stocks{
+    margin-left:5px; 
+    width:65%;
+    font-weight:bold;
+    color:#000;
+    text-decoration:none;
+
+    
+}
+.containerCardStocks .cardTop .price{
+    font-weight:bold;
+}
+
+/*  */
+.containerCardStocks .cardBottom{
+    display:flex;
+    width:inherited;
+    align-items:center;
+    flex:1;
+    margin-right:15px;
+    border-bottom: 1px solid #ccc;
+    
+    
+}
+.containerCardStocks .cardBottom .nameCompany{
+    margin-left:5px; 
+    width:65%;
+    margin-top: -5px;
+}
+.containerCardStocks .cardBottom .variation{
+    margin-rigth: 10%; 
+    margin-top: -5px;
+    
+}
+
+
+
+
