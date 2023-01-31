@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import { getStock, getTickersFilter } from "../../api/api";
 import { InfoFinance } from "../../components/Info_Finance";
 import { formataData } from "../../dataFormat";
+
 import "./styles.css";
 export const Analytic = () => {
   const [data, setData] = useState();
-  const [info, setInfo] = useState();
+  const [info, setInfo] = useState(); 
   const [dataList, setDataList] = useState();
   const { stockName } = useParams();
+
 
   const loadData = async () => {
     const data = await getStock(stockName);
@@ -19,9 +21,22 @@ export const Analytic = () => {
     console.log(dataList);
   };
 
+  const teste = () =>{
+    const ultimaData = data.regularMarketTime;
+    let datas = [];
+
+    for(let i in info){
+      datas.push(info[i].date)
+    }
+    formataData(datas, ultimaData)
+  }
+
   useEffect(() => {
     loadData();
   }, []);
+
+  
+
 
   return (
     <>
@@ -74,20 +89,7 @@ export const Analytic = () => {
               
             </div>
 
-            <div className="analyticBody">
-              {info && (
-                <>
-                  {info.map((item, index) => (
-                    <>
-                      <div key={index}>
-                        PREÇO: {item.close.toFixed(2)} //--// DIA:{" "}
-                        {formataData(new Date(parseInt(`${item.date}000`)))}
-                      </div>
-                    </>
-                  ))}
-                </>
-              )}
-            </div>
+            
           
         </div>
       )}
